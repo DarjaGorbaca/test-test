@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
+body {
+background-color: white;
+/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%231a33af' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2  0 0 0 4z'%3E%3C/path%3E%3C/svg%3E"); */
+}
+.about-container {
+    display: flex;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/* section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.image-container {
+    border-radius: 10px;
+    padding: 10px 20px; 
+    margin-right: 25px;
+    width: auto;
+    display: flex;
+}
+
+#portfolio{
+    margin-top: 100px;
+    display: flex;
+    width: 20px;
+}
+
+
+.fab {
+    font-size: 100px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+/* Menu */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+
+.links{
+    flex: 1;
+    text-align: right;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    color: rgb(39, 38, 38);
+}
+
+
+
+/* Dark/Light mode */
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+    inset 4px 4px 4px rgb(255, 255, 255), 
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: rgb(60, 60, 59);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px; 
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.dark > * h1{
+    color: rgb(255, 255, 255); 
+}
+
+.dark > * a{
+    color: rgb(255, 255, 255);
+}
+
+.dark > nav{
+    background-color: rgb(60, 60, 59);
+}
+
+/* home */
+
+#home{
+    /* height: 600px; */
+    width: 100%;
+}
+
+.home-main{
+    position: absolute;
+    height: 192px;
+    font-size: 70px;
+    letter-spacing: 0.22px;
+    text-align: center;
+    width: 700px;
+    color: rgb(39, 38, 38);
+    top: 14%;
+    right: 30%;
+}
+.home-about{
+    font-size: 22px;
+    position: absolute;
+    height: 33px;
+    margin-top: 10px;
+    color: black;
+}
+
+/* about */
+
+.about-image1{
+    position: absolute;
+    height: 673px;
+    right: 5%;
+    border-radius: 12px;
+    margin-top: 5%;
+}
+
+.about-image3{
+    position: absolute;
+    height: 573px;
+    right: 33%;
+    border-radius: 12px;
+    margin-top: 9%;
+}
+
+#about{
+    height: 600px;
+    width: 100%;
+}
+
+.about-content{
+    margin-top: 12%;
+    margin-left: 8%;
+}
+
+.about-main{
+    width: 33%;
+    margin-top: 20px;
+    width: 500px;
+    font-size: 25px;
+
+}
+
+/* concept */
+
+.concept-card{
+    padding-top: 30px;
+    background: #969292;
+    width: 30%;
+    min-height: 600px;
+    margin: auto;
+    display: block;
+    border-radius: 2rem;
+}
+
+.concept-card img{
+    margin-top: 120px;
+    height: 300px;
+    width: 300px;
+}
+
+
+#concept{
+    height: 700px;
+    min-width: 100%;
+    margin-top: 400px;
+    text-align: center;
+}
+
+.concept-container{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* destinations */
+
+.destinations-main{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.box{
+    width: 470px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.slide-img{
+    height: 400px;
+    position: relative;
+
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.box-text{
+   font-size: 26px;
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.overlay{
+    position: absolute;
+    margin-top: -210px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 420px;
+    background-color: rgba(175, 175, 180, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #252525;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.book-btn:hover{
+    color: #ffffff;
+    background-color: #0b0b0b;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay{
+    visibility: visible;
+}
+
+
+/* gallery */
+
+.content-container img{
+    height: 650px;
+    width: 500px;
+    justify-content: space-between;
+    margin-left: 40px;
+    
+}
+
+.gallery-main{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* contacts */
+
+
+#contacts{
+    text-align: center;
+    height: 500px;
+    margin-top: 250px;
+}
+
+.follow-content{
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
